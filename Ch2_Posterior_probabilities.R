@@ -15,7 +15,7 @@ plot_posterior <- function(x, y) {
  title <- paste( length(x), "Points")
  mtext(title)}
 
-#****If you don't want to save plots, don't create a new directory and disable this function*********
+#******If you don't want to save plots, don't create a new directory and disable this function*******
   #If you disable this function, yo'll get an error after running each save_plot_posterior command
 dir.create("Ch_2_plots")
 save_plot_posterior <- function(x, y) {
