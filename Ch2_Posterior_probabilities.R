@@ -16,7 +16,8 @@ plot_posterior <- function(x, y) {
  mtext(title)}
 
 #******If you don't want to save plots, don't create a new directory and disable this function*******
-  #If you disable this function, yo'll get an error after running each save_plot_posterior command
+  #If you disable this function, you'll get an error after running each save_plot_posterior command
+  #The following 8 lines of code create a directory, "Ch_2_plots", save the specified plot as a png,   and then list all of the plots in the new, "Ch_2_plots," directory.
 dir.create("Ch_2_plots")
 save_plot_posterior <- function(x, y) {
   png(paste("Ch_2_plots/", name, ".png", sep = ""), width = 350, height = 350)
