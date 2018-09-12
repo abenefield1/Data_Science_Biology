@@ -1,4 +1,6 @@
-#4. Data on total leaf lesions due to viral infection & avg. nectar volume of flowers (microliters) of deadly nightshade (Atropa belladona). 
+# Simple Linear Regression Analysis
+
+# Data on total leaf lesions due to viral infection & avg. nectar volume of flowers (microliters) of deadly nightshade (Atropa belladona). 
 
 nectar.ul <- c(160.44, 41.85, 238.72, 383.67, 84.53, 360.34, 285.57, 267.2, 79.92, 201.09, 189.23, 200.1, 248.79, 378.07, 209.76, 206.58, 66.49, 263.33, 0.19, 191.95, 28.81, 246.87, 297.63, 252.93, 242.9, 393.72, 322.86, 256.12, 300.55, 281.77, 208.44, 200.32, 205.19, 51.89, 336.75, 34.77, 161.78, 96.41, 134.38, 236.24, 73.64, 166.8, 255.32, 185.87, 35.18, 135.43, 124.7, 126.5, 212.36, 126.93, 192.28, 213.94, 281.01, 158.78, 242.59, 237.37, 112.79, 242.23, 119.35, 193.43, 224.37, 184.48, 296.33, 10.63)
 
