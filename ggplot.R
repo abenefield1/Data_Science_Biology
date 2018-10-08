@@ -449,18 +449,34 @@ ggplot(data = mpg) +
  ########################################################################
  # 1. Turn a stacked bar chart into a pie chart using coord_polar().
  ggplot(data = diamonds) + 
-   geom_bar(mapping = aes(x = cut, fill=cut), position = "fill", , width=1)+
+   geom_bar(mapping = aes(x = cut, fill=cut), position = "fill", width=1)+
    coord_polar()
 
  #2. What does labs() do? Read the documentation.
  # Allows you to add labels
  
 # 3. What’s the difference between coord_quickmap() and coord_map()?
-   
-   What does the plot below tell you about the relationship between city and highway mpg? Why is coord_fixed() important? What does geom_abline() do?
-   
+ #coord_map projects a portion of the earth onto a 2d plane using designated projection.Computationally costly. coord_quickmap is a quick approximation that doesn't use projection?  
+ 
+# 4. What does the plot below tell you about the relationship between city and highway mpg? Why is coord_fixed() important? What does geom_abline() do?
    ggplot(data = mpg, mapping = aes(x = cty, y = hwy)) +
    geom_point() + 
    geom_abline() +
    coord_fixed() 
  
+   ggplot(data = mpg, mapping = aes(x = cty, y = hwy)) +
+     geom_point() + 
+     geom_abline()
+# It holds the axis scales equal to one another.   
+   
+# Template:
+   ggplot(data = <DATA>) + 
+     <GEOM_FUNCTION>(
+       mapping = aes(<MAPPINGS>),
+       stat = <STAT>, 
+       position = <POSITION>
+     ) +
+     <COORDINATE_FUNCTION> +
+     <FACET_FUNCTION>
+
+     
