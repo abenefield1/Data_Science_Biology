@@ -2,6 +2,7 @@
 library(ggplot2)
 library(dplyr)
 library(tidyverse)
+library(maps)
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy))
 
@@ -276,4 +277,190 @@ ggplot(data = mpg) +
   # For proportions:
   ggplot(data = diamonds) + 
     geom_bar(mapping = aes(x = cut, y = ..prop.., group = 1))
+
+  # To summarize stats:
+  ggplot(data = diamonds) + 
+    stat_summary(
+      mapping = aes(x = cut, y = depth),
+      fun.ymin = min,
+      fun.ymax = max,
+      fun.y = median
+    )
   
+  # 3.7.1 Exercises:
+  ########################################################################
+# 1. What is the default geom associated with stat_summary()? How could you rewrite the previous plot to use that geom function instead of the stat function?
+  #The default geom is geom_pointrange. the default stat for geom_pointrange() is identity(), so use geom_pointrange(stat = "summary").
+  ggplot(data = diamonds) +
+    geom_pointrange(
+      mapping = aes(x = cut, y = depth),
+      stat = "summary",
+    )
+  
+  ggplot(data = diamonds) +
+    geom_pointrange(
+      mapping = aes(x = cut, y = depth),
+      stat = "summary",
+      fun.ymin = min,
+      fun.ymax = max,
+      fun.y = median
+    )
+  
+  # 2. What does geom_col() do? How is it different to geom_bar()?
+  ggplot(data = diamonds) + 
+    geom_col(mapping = aes(x = cut, y=depth))
+
+  ggplot(data = diamonds) + 
+    geom_bar(mapping = aes(x = cut))
+    #geom_col uses the data as is, using stat_identity. It expects the data to be organized already (i.e., means). The heights of the bars represent values in the data for geom_col. geom_bar makes the height of the bar proportional to the number of cases in each group. It uses stat_count by default: it counts the number of cases at each x position.
+    
+# 3. Most geoms and stats come in pairs that are almost always used in concert. Read through the documentation and make a list of all the pairs. What do they have in common?
+  #geom_bar uses stat_count
+  #geom_col uses stat_identity
+  #geom_abline
+  #geom_bin2d uses stat_bin_2d
+  #geom_boxplot uses stat_boxplot
+  #geom_contour uses stat_contour
+  #geom_count uses stat_sum
+  #geom_density uses stat_density (same with 2d)
+  #geom_hex uses stat_bin_hex
+  #geom_freqpoly and geom_histogram both use stat_bin
+  # geom_qq_line uses stat_qq_line
+  #geom_qq uses stat_qq
+  #geom_quantile uses stat_quantile
+  #geom_smooth uses stat_smooth
+  # Most stat pairs have the same name as their geom
+  
+# 4. What variables does stat_smooth() compute? What parameters control its behaviour?
+    #Computed variables
+  #y: predicted value
+  #ymin: lower pointwise confidence interval around the mean
+  #ymax: upper pointwise confidence interval around the mean
+  #se: standard error
+ #It is controlled by the smoothing method used. Can be lm, glm, gam, loess. Auto means smoothing method is chosen based on the size of the largest group
+  
+# 5. In our proportion bar chart, we need to set group = 1. Why? In other words what is the problem with these two graphs?
+    ggplot(data = diamonds) + 
+    geom_bar(mapping = aes(x = cut, y = ..prop..))
+  ggplot(data = diamonds) + 
+    geom_bar(mapping = aes(x = cut, fill = color, y = ..prop..))
+  #Group needs to be defined, because geom_bar will assume the group proportions all equal one. In other words, the proportions are calculated within groups instead of across them. This leaves all bars ==1.
+
+  
+  ########################################################################
+  # Postition Adjustments:
+  ########################################################################
+  # Using fill instead of color:
+  ggplot(data = diamonds) + 
+    geom_bar(mapping = aes(x = cut, colour = cut))
+  ggplot(data = diamonds) + 
+    geom_bar(mapping = aes(x = cut, fill = cut))
+
+  #But, if we wanted to look at a different variable:
+  ggplot(data = diamonds) + 
+    geom_bar(mapping = aes(x = cut, fill = clarity))
+  # Becomes stacked barplot
+  # Using identity, places graph exactly where it belongs. Not useful for bars, because overlap. So, must make transparent:
+  ggplot(data = diamonds, mapping = aes(x = cut, fill = clarity)) + 
+    geom_bar(alpha = 1/5, position = "identity")
+  ggplot(data = diamonds, mapping = aes(x = cut, colour = clarity)) + 
+    geom_bar(fill = NA, position = "identity")
+  
+  #position = "fill" works like stacking, but makes each set of stacked bars the same height. This makes it easier to compare proportions across groups.
+ ggplot(data = diamonds) + 
+    geom_bar(mapping = aes(x = cut, fill = clarity), position = "fill")
+#position = "dodge" places overlapping objects directly beside one another. This makes it easier to compare individual values.
+ ggplot(data = diamonds) + 
+   geom_bar(mapping = aes(x = cut, fill = clarity), position = "dodge")  
+ 
+ #To avoid missing points on scatterplot due to overlapping, use jitter. This applies small amount of random noise to points, which separates them:
+ ggplot(data = mpg) + 
+   geom_point(mapping = aes(x = displ, y = hwy), position = "jitter")
+
+ # 3.8 Exercises:
+ ########################################################################
+# 1. What is the problem with this plot? How could you improve it?
+   ggplot(data = mpg, mapping = aes(x = cty, y = hwy)) + 
+   geom_point()
+  # Overplotting at each combination of cty and hwy has made the plot look off. Use jitter
+ ggplot(data = mpg, mapping = aes(x = cty, y = hwy)) +
+   geom_point(position = "jitter")
+
+# 2. What parameters to geom_jitter() control the amount of jittering?
+ # width: Amount of vertical and horizontal jitter. The jitter is added in both positive and negative directions, so the total spread is twice the value specified here. If omitted, defaults to 40% of the resolution of the data: this means the jitter values will occupy 80% of the implied bins. Categorical data is aligned on the integers, so a width or height of 0.5 will spread the data so it's not possible to see the distinction between the categories.
+ #height: same idea as width
+ 
+# 3. Compare and contrast geom_jitter() with geom_count().
+ ggplot(data = mpg, mapping = aes(x = cty, y = hwy)) +
+   geom_jitter()
+ ggplot(data = mpg, mapping = aes(x = cty, y = hwy)) +
+   geom_count()
+ # They roughly achieve the same idea. jitter moves the points slightly to allow visualization of all points (regardless of overlap). In doing so, it loses accuracy. So, it's ok at a large scale, but you lose information on the small scale. geom_count resizes points depending upon number of points in that location. So, you won't see all of the individual points, but if a location has 3 observations, it will have a point 3x larger than a location with only one observation. It has a downside in that large points can cause overlap as well. See below:
+ ggplot(data = mpg, mapping = aes(x = cty, y = hwy, color = class)) +
+   geom_jitter()
+ ggplot(data = mpg, mapping = aes(x = cty, y = hwy, color = class)) +
+   geom_count()
+ #You can reduce this issue using alpha to create transparency
+ ggplot(data = mpg, mapping = aes(x = cty, y = hwy, color = class)) +
+   geom_count(alpha=1/2)
+ 
+# 4. What’s the default position adjustment for geom_boxplot()? Create a visualisation of the mpg dataset that demonstrates it.
+ # The default is dodge
+ ggplot(data = mpg, aes(x = drv, y = hwy, colour = class)) +
+   geom_boxplot()
+# You can tell it is dodge, because each value of drv has a boxplot for each class. If it were identity, they would overlap:
+ ggplot(data = mpg, aes(x = drv, y = hwy, colour = class)) +
+   geom_boxplot(position = "identity")
+ 
+ 
+ ########################################################################
+ # Coordinate Systems:
+ ########################################################################
+ ggplot(data = mpg, mapping = aes(x = class, y = hwy)) + 
+   geom_boxplot()
+ # Flip x and y axes
+ ggplot(data = mpg, mapping = aes(x = class, y = hwy)) + 
+   geom_boxplot() +
+   coord_flip()
+# Setting aspect ratio using coord_quickmap:
+ nz <- map_data("nz")
+ 
+ ggplot(nz, aes(long, lat, group = group)) +
+   geom_polygon(fill = "white", colour = "black")
+ 
+ ggplot(nz, aes(long, lat, group = group)) +
+   geom_polygon(fill = "white", colour = "black") +
+   coord_quickmap()
+
+ #Polar coordinates:
+ bar <- ggplot(data = diamonds) + 
+   geom_bar(
+     mapping = aes(x = cut, fill = cut), 
+     show.legend = FALSE,
+     width = 1
+   ) + 
+   theme(aspect.ratio = 1) +
+   labs(x = NULL, y = NULL)
+ 
+ bar + coord_flip()
+ bar + coord_polar()
+
+ # 3.9 Exercises:
+ ########################################################################
+ # 1. Turn a stacked bar chart into a pie chart using coord_polar().
+ ggplot(data = diamonds) + 
+   geom_bar(mapping = aes(x = cut, fill=cut), position = "fill", , width=1)+
+   coord_polar()
+
+ #2. What does labs() do? Read the documentation.
+ # Allows you to add labels
+ 
+# 3. What’s the difference between coord_quickmap() and coord_map()?
+   
+   What does the plot below tell you about the relationship between city and highway mpg? Why is coord_fixed() important? What does geom_abline() do?
+   
+   ggplot(data = mpg, mapping = aes(x = cty, y = hwy)) +
+   geom_point() + 
+   geom_abline() +
+   coord_fixed() 
+ 
