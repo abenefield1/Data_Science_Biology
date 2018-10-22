@@ -1,0 +1,37 @@
+eidid,eid_name,path_genus,path_species,path_disease,Geographic_midpoint,Center_min_dist,Avg_Latitude,event_location,zoo_origin,zoo_origin_type,path_type,event_date,event_year,event_decade,filename,wildlife_zoonoses
+351,HED_351,Unspecified,Unspecified,Chikungunya fever,,,-3.737582,"South Sumatra,Java, and West Kalimantan (Indonesia)",1,2,virus,1982,1982,1980,HED_351.shp,TRUE
+429,HED_429,Unspecified,Unspecified,Unspecified,,,0.791653,southwestern Uganda (Rakai District),1,2,virus,May-96,1996,1990,HED_429.shp,TRUE
+470,HED_470,Unspecified,Unspecified,Unspecified,,,2.890069,"Yambuku near the banks of the Ebola river, Zaire (now Dem Rep Congo)",1,2,virus,1-Sep-76,1976,1970,HED_470.shp,TRUE
+331,HED_331,Trypanosoma,brucei,Unspecified,,,4.910958,"Sudan (Western Equatoria was Ibbe, in Maridi county)",1,3,protozoa,1997,1997,1990,HED_331.shp,TRUE
+329,HED_329,Trypanosoma,brucei,Unspecified,,,5.476222,"Tambura County, Western Equatoria, Sudan",1,3,protozoa,1997,1997,1990,HED_329.shp,TRUE
+352,HED_352,Unspecified,Unspecified,Unspecified,,,5.564996,"Tia Forest, cote d'ivoire",1,2,virus,Nov-94,1994,1990,HED_352.shp,TRUE
+463,HED_463,Unspecified,Unspecified,Venezuelan Equine Encephalitis,,,11.002978,Venezuela (eastern part of Falcon State),1,3,virus,Apr-95,1995,1990,HED_463.shp,TRUE
+234,HED_234,Yersinia,pestis,Unspecified,,,21.714446,"Surat, Gujarat, India",1,2,bacteria,Aug-94,1994,1990,HED_234.shp,TRUE
+24,HED_24,Burkholderia,pseudomallei,Melioidosis,,,23.721477,Taiwan,1,3,bacteria,1994,1994,1990,HED_24.shp,TRUE
+198,HED_198,Serratia,odorifera,Unspecified,,,27.996169,"Tampa, FL",1,3,bacteria,1987,1987,1980,HED_198.shp,TRUE
+181,HED_181,Rickettsia,typhi,Murine (endemic) typhus,,,31.597087,Texas,1,2,rickettsia,1983,1983,1980,HED_181.shp,TRUE
+60,HED_60,Escherichia,coli,Enterohemorrhagic Escherichia coli,,,31.947779,"Subiaco, Western Australia",1,3,bacteria,late 1980s,1980,1980,HED_60.shp,TRUE
+61,HED_61,Escherichia,coli,Enterohemorrhagic Escherichia coli,,,31.947779,"Subiaco, Western Australia",1,3,bacteria,late 1980s,1980,1980,HED_61.shp,TRUE
+275,HED_275,Echinococcus,granulosus,Unspecified,,,32.070952,"tibet; Wen, H., Chai, J.J., Wang, J.C., Wang, S.H., Wang, X.Y., Feng, X.H. and Zhou, H.X., 2002. Hydatid control within a continental system in PR China. In: Craig, P.S. and Pawlowski, Z., Editors, 2002. Cestode Zoonoses: Echinococcosis and Cysticercosis, IOS Press, Amsterdam, pp. 355<d0>365.",1,3,helminths,1990s,1990,1990,HED_275.shp,TRUE
+277,HED_277,Echinococcus,granulosus,Unspecified,,,32.070952,"Tibet; Wen, H., Chai, J.J., Wang, J.C., Wang, S.H., Wang, X.Y., Feng, X.H. and Zhou, H.X., 2002. Hydatid control within a continental system in PR China. In: Craig, P.S. and Pawlowski, Z., Editors, 2002. Cestode Zoonoses: Echinococcosis and Cysticercosis, IOS Press, Amsterdam, pp. 355<d0>365.",1,3,helminths,1980,1980,1980,HED_277.shp,TRUE
+179,HED_179,Rickettsia,japonica,Japanese spotted fever,,,33.926723,"Tokushima Prefecture, on the island of Shikoku in southwestern Japan",1,2,rickettsia,1984,1984,1980,HED_179.shp,TRUE
+242,HED_242,Yersinia,pestis,Unspecified,34.51994,34.51994,34.51994,USA (NM area),1,2,bacteria,1990s,1990,1990,HED_242.shp,TRUE
+43,HED_43,Ehrlichia,ewingii,Unspecified,,,37.116566,"southern MO, USA",1,3,rickettsia,1996,1996,1990,HED_43.shp,TRUE
+138,HED_138,Encephalitozoon,hellem,Unspecified,,,37.79805,"Texas and NYC(2), USA",1,3,protozoa,1990,1990,1990,HED_138.shp,TRUE
+273,HED_273,Anisakis,simplex,Anisakiasis,,,40.06952,Spain,1,2,helminths,1991,1991,1990,HED_273.shp,TRUE
+307,HED_307,Leishmania,infantum,Unspecified,,,41.25799,"Spain, southern France, Portugal, and Italy",1,3,protozoa,1990,1990,1990,HED_307.shp,TRUE
+10,HED_10,Bartonella,elizabethae,Endocarditis,,,42.348393,"St. Elizabeth's Hospital, Brighton, MA",1,2,bacteria,1986,1986,1980,HED_10.shp,TRUE
+454,HED_454,Unspecified,Unspecified,Unspecified,,,42.817037,southeastern Idaho,1,2,virus,17-Sep-78,1978,1970,HED_454.shp,TRUE
+59,HED_59,Escherichia,coli,Enterohemorrhagic Escherichia coli,,,44.208989,"South Dakota, US",1,3,bacteria,1980,1980,1980,HED_59.shp,TRUE
+290,HED_290,Trichinella,spiralis,Unspecified,,,44.340833,Yugoslavia,1,3,helminths,1990s,1990,1990,HED_290.shp,TRUE
+26,HED_26,Campylobacter,jejuni,Unspecified,,,47.390438,"Zurich, Switzerland",1,3,bacteria,28-Apr-86,1986,1980,HED_26.shp,TRUE
+30,HED_30,Clostridium,botulinum,food botulism,48.613101,43.804133,48.133577,"US (alaska, Washington, Oregon, California)",1,2,bacteria,1976,1976,1970,HED_30.shp,TRUE
+289,HED_289,Trichinella,spiralis,Unspecified,55.179807,45.943161,50.067018,"USSR, Bulgaria, Romania",1,3,helminths,1980s,1980,1980,HED_289.shp,TRUE
+65,HED_65,Escherichia,coli,Enterohemorrhagic Escherichia coli,,,50.922397,UK (Southampton),1,3,bacteria,1984,1984,1980,HED_65.shp,TRUE
+63,HED_63,Escherichia,coli,Enterohemorrhagic Escherichia coli,,,51.755053,UK (Oxford),1,3,bacteria,1984,1984,1980,HED_63.shp,TRUE
+66,HED_66,Escherichia,coli,Enterohemorrhagic Escherichia coli,,,54.061183,UK,1,3,bacteria,late 1980s,1980,1980,HED_66.shp,TRUE
+67,HED_67,Escherichia,coli,Enterohemorrhagic Escherichia coli,,,54.061183,UK,1,3,bacteria,late 1980s,1980,1980,HED_67.shp,TRUE
+68,HED_68,Escherichia,coli,Enterohemorrhagic Escherichia coli,,,54.061183,UK,1,3,bacteria,late 1980s,1980,1980,HED_68.shp,TRUE
+64,HED_64,Escherichia,coli,Enterohemorrhagic Escherichia coli,,,54.595041,UK (Belfast),1,3,bacteria,1984,1984,1980,HED_64.shp,TRUE
+5,HED_5,Bacillus,anthracis,Anthrax,,,56.819341,"Sverdlovsk (now Yekaterinburg), north central Russia",1,3,bacteria,2-Apr-79,1979,1970,HED_5.shp,TRUE
+171,HED_171,Rickettsia,helvetica,Unspecified,,,59.857517,"Uppsala, Sweden",1,3,rickettsia,Oct. 1997,1997,1990,HED_171.shp,TRUE
