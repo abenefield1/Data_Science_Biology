@@ -36,7 +36,6 @@ head(dat1)
 dat1
 length(unique(dat1$Type))
 
-
 #Aggregating on both year and type
 library(dplyr)
 plot(dat1$Morbidity~dat1$Year)
