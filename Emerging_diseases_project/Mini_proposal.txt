@@ -2,6 +2,7 @@
 # Dataset on Emerging Infectious Diseases
 
 
+
 #Characteristics:
 	# 149 emerging disease outbreaks
 	# Includes data on location, pathogen type, species, date (year), and other unimportant attributes
