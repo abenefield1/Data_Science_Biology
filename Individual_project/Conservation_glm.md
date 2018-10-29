@@ -374,8 +374,8 @@ Correct_length2
 
     ## [1] "Length Should Be: 9165"
 
-``` r
 # Plots all states with hectares of protected area by gap status
+``` r
 dat1 %>%
   mutate(yjit=jitter(0*PA_ha)) %>%
   ggplot() +
