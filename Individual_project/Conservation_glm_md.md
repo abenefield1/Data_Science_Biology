@@ -277,7 +277,9 @@ Correct_length2
 # Plots all states with hectares of protected area by gap status
 dat1 %>%
   mutate(yjit=jitter(0*PA_ha)) %>%
-  ``` r
+```
+
+```r
   ggplot() +
   geom_point(mapping = aes(x=PA_ha,col=Gap_Status,y=yjit),shape=1,alpha=0.5) +
   facet_wrap(facets = ~ State_Name) +
