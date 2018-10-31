@@ -1,0 +1,46 @@
+---
+title: "Variable Scales"
+author: "Benefield"
+date: "10/31/2018"
+output:
+    github_document:
+        pandoc_args: --webtex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Scales of Variables
+
+#### (1.) Scales of Variation in the sampling design.
+**Scales**: Between state variation and between county variation (residual)
+  
+**Grouping variables**
+  The grouping variables / random effects are states which are comprised of counties state(county)
+
+#### (2.) Scale of Response Variable.
+   **Hectares of protected area (PA_ha)**
+
+#### (3.) Scales of measurement for Predictor Variables.
+  **GAP Status (1-4)** = between county predictor and **State GDP** = between state predictor (?)
+
+#### Sketch of Sample Design:
+
+![](Conservation_glm_files/figure-markdown_github/Sample_Design.png)
+
+
+
+## The Model:
+
+#### (1.) The Statistical Model in mathematical notation:
+**State Level Model:**
+$$\mu _{j}\sim N(\mu, \sigma ^{2})$$
+**County Level Model**
+$$y_{i}\sim N(\mu _{j[i]}, \sigma ^{2})$$
+
+$$\mu _{j}=State\ Mean\ Hectares\ of\ Protected\ Area$$ 
+
+$$j[i]=State\ j\ that\ belongs\ to\ county\ i$$
+
+
