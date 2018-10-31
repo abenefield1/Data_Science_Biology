@@ -47,4 +47,11 @@ Area](https://latex.codecogs.com/png.latex?%5Cmu%20_%7Bj%7D%3DState%5C%20Mean%5C
   
 ![j\[i\]=State\\ j\\ that\\ belongs\\ to\\ county\\
 i](https://latex.codecogs.com/png.latex?j%5Bi%5D%3DState%5C%20j%5C%20that%5C%20belongs%5C%20to%5C%20county%5C%20i
-"j[i]=State\\ j\\ that\\ belongs\\ to\\ county\\ i")
+"j[i]=State\\ j\\ that\\ belongs\\ to\\ county\\ i")  
+
+#### (2.) Write down the corresponding linear model formula for stan\_lmer/stan\_glmer.
+
+``` r
+ppfit_bayes <- stan_lmer( log_PA_ha ~ 1 + (1|State_Name), data=dat1 )
+print(summary(ppfit_bayes)[,c(1,3,9,10)],digits=3)
+```
