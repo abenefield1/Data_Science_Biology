@@ -43,4 +43,9 @@ $$\mu _{j}=State\ Mean\ Hectares\ of\ Protected\ Area$$
 
 $$j[i]=State\ j\ that\ belongs\ to\ county\ i$$
 
+#### (2.) Write down the corresponding linear model formula for stan_lmer/stan_glmer.
+``` r
+ppfit_bayes <- stan_lmer( log_PA_ha ~ 1 + (1|State_Name), data=dat1 )
+print(summary(ppfit_bayes)[,c(1,3,9,10)],digits=3)
+```
 
