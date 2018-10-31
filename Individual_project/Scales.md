@@ -32,12 +32,12 @@ between state predictor (?)
 
 **State Level Model:**   
 ![\\mu \_{j}\\sim N(\\mu, \\sigma
-^{2})](https://latex.codecogs.com/png.latex?%5Cmu%20_%7Bj%7D%5Csim%20N%28%5Cmu%2C%20%5Csigma%20%5E%7B2%7D%29
-"\\mu _{j}\\sim N(\\mu, \\sigma ^{2})")  
+\_{s}^{2})](https://latex.codecogs.com/png.latex?%5Cmu%20_%7Bj%7D%5Csim%20N%28%5Cmu%2C%20%5Csigma%20%20_%7Bs%7D%5E%7B2%7D%29
+"\\mu _{j}\\sim N(\\mu, \\sigma  _{s}^{2})")  
 **County Level Model**   
 ![y\_{i}\\sim N(\\mu \_{j\[i\]}, \\sigma
-^{2})](https://latex.codecogs.com/png.latex?y_%7Bi%7D%5Csim%20N%28%5Cmu%20_%7Bj%5Bi%5D%7D%2C%20%5Csigma%20%5E%7B2%7D%29
-"y_{i}\\sim N(\\mu _{j[i]}, \\sigma ^{2})")  
+\_{c}^{2})](https://latex.codecogs.com/png.latex?y_%7Bi%7D%5Csim%20N%28%5Cmu%20_%7Bj%5Bi%5D%7D%2C%20%5Csigma%20_%7Bc%7D%5E%7B2%7D%29
+"y_{i}\\sim N(\\mu _{j[i]}, \\sigma _{c}^{2})")  
 
   
 ![\\mu \_{j}=State\\ Mean\\ Hectares\\ of\\ Protected\\
@@ -55,3 +55,5 @@ i](https://latex.codecogs.com/png.latex?j%5Bi%5D%3DState%5C%20j%5C%20that%5C%20b
 ppfit_bayes <- stan_lmer( log_PA_ha ~ 1 + (1|State_Name), data=dat1 )
 print(summary(ppfit_bayes)[,c(1,3,9,10)],digits=3)
 ```
+
+![](Conservation_glm_files/figure-gfm/unnamed-chunk-36-2.png)
