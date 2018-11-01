@@ -1,7 +1,7 @@
 Conservation\_glm.R
 ================
 Amy
-Wed Oct 31 16:33:01 2018
+Wed Oct 31 18:13:37 2018
 
 ``` r
 library(ggplot2)
@@ -298,12 +298,12 @@ dat1 %>%
   ggplot() +
   geom_point(mapping = aes(x=PA_ha,col=Gap_Status,y=yjit),shape=1,alpha=0.5) +
   facet_wrap(facets = ~ State_Name) +
-  scale_x_continuous(breaks=c(0,20,40),limits=c(0,50)) +
+  scale_x_continuous(breaks=c(0,1000000,2000000),limits=c(0,3000000)) +
   theme(axis.text.y=element_blank(),axis.ticks.y=element_blank(),
         axis.title.y=element_blank(),panel.grid=element_blank())
 ```
 
-    ## Warning: Removed 8301 rows containing missing values (geom_point).
+    ## Warning: Removed 2 rows containing missing values (geom_point).
 
 ![](Conservation_glm_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
@@ -615,13 +615,13 @@ print(lnPA_mean_var,n=Inf) #n=Inf to print all rows
     ##    State_Name           sample_size ST_mn ST_sd ST_se sample_size_jit
     ##    <fct>                      <int> <dbl> <dbl> <dbl>           <dbl>
     ##  1 Alabama                      201  7.08  1.92 0.135          201.  
-    ##  2 Arizona                       60 12.0   1.88 0.242           59.9 
+    ##  2 Arizona                       60 12.0   1.88 0.242           60.1 
     ##  3 Arkansas                     202  7.45  2.54 0.179          202.  
     ##  4 California                   220 10.4   2.05 0.138          220.  
     ##  5 Colorado                     226  9.56  2.42 0.161          226.  
-    ##  6 Connecticut                   29  8.28  2.00 0.371           28.9 
-    ##  7 Delaware                      10  9.59  2.44 0.771           10.2 
-    ##  8 District of Columbia           4  5.28  2.90 1.45             4.17
+    ##  6 Connecticut                   29  8.28  2.00 0.371           29.1 
+    ##  7 Delaware                      10  9.59  2.44 0.771           10.0 
+    ##  8 District of Columbia           4  5.28  2.90 1.45             4.19
     ##  9 Florida                      245  8.81  2.25 0.144          245.  
     ## 10 Georgia                      445  6.59  2.25 0.106          445.  
     ## 11 Idaho                        150  9.59  2.93 0.239          150.  
@@ -631,18 +631,18 @@ print(lnPA_mean_var,n=Inf) #n=Inf to print all rows
     ## 15 Kansas                       178  6.04  2.14 0.161          178.  
     ## 16 Kentucky                     303  6.20  2.07 0.119          303.  
     ## 17 Louisiana                    202  7.41  2.22 0.156          202.  
-    ## 18 Maine                         56  9.72  2.47 0.330           56.0 
-    ## 19 Maryland                      75  8.90  1.82 0.210           75.0 
-    ## 20 Massachusetts                 55  9.29  1.85 0.249           54.9 
+    ## 18 Maine                         56  9.72  2.47 0.330           55.9 
+    ## 19 Maryland                      75  8.90  1.82 0.210           75.1 
+    ## 20 Massachusetts                 55  9.29  1.85 0.249           55.0 
     ## 21 Michigan                     276  7.51  2.36 0.142          276.  
     ## 22 Minnesota                    291  7.27  2.76 0.162          291.  
     ## 23 Mississippi                  225  7.71  2.00 0.133          225.  
     ## 24 Missouri                     307  6.54  2.57 0.147          307.  
     ## 25 Montana                      188 10.2   2.35 0.171          188.  
     ## 26 Nebraska                     217  6.19  2.06 0.140          217.  
-    ## 27 Nevada                        60 11.3   2.64 0.340           59.9 
-    ## 28 New Hampshire                 40  8.81  1.99 0.314           40.1 
-    ## 29 New Jersey                    81  8.23  1.96 0.218           81.2 
+    ## 27 Nevada                        60 11.3   2.64 0.340           59.8 
+    ## 28 New Hampshire                 40  8.81  1.99 0.314           40.0 
+    ## 29 New Jersey                    81  8.23  1.96 0.218           81.0 
     ## 30 New Mexico                   117 10.8   2.14 0.198          117.  
     ## 31 New York                     205  8.07  2.08 0.145          205.  
     ## 32 North Carolina               303  7.36  2.35 0.135          303.  
@@ -651,7 +651,7 @@ print(lnPA_mean_var,n=Inf) #n=Inf to print all rows
     ## 35 Oklahoma                     205  8.17  2.03 0.142          205.  
     ## 36 Oregon                       135  9.96  2.32 0.200          135.  
     ## 37 Pennsylvania                 257  7.59  2.09 0.130          257.  
-    ## 38 Rhode Island                  20  7.75  2.56 0.572           20.1 
+    ## 38 Rhode Island                  20  7.75  2.56 0.572           19.9 
     ## 39 South Carolina               141  7.34  2.21 0.186          141.  
     ## 40 South Dakota                 189  8.12  2.32 0.169          189.  
     ## 41 Tennessee                    241  6.79  2.19 0.141          241.  
@@ -670,7 +670,7 @@ ggplot(data=lnPA_mean_var) +
   geom_hline(mapping=aes(yintercept=poolmean),data=cp_pred_df,col="blue") +
   geom_point(mapping=aes(x=sample_size_jit,y=ST_mn)) +
   geom_linerange(mapping=aes(x=sample_size_jit,ymin=ST_mn-ST_se,ymax=ST_mn+ST_se)) +
-  scale_x_continuous(trans="log",breaks=c(1,3,10,30,100)) +
+  scale_x_continuous(trans="log",breaks=c(7,20,55,148,400)) +
   labs(x="Sample size in State j",y="mean ln(PA hectares) in State j",
        title="No pooling: separate analyses by State")
 ```
@@ -737,7 +737,7 @@ plotONE <-
   geom_hline(mapping=aes(yintercept=poolmean),data=cp_pred_df,col="blue") +
   geom_point(mapping=aes(x=sample_size_jit,y=ST_mn)) +
   geom_linerange(mapping=aes(x=sample_size_jit,ymin=ST_mn-ST_se,ymax=ST_mn+ST_se)) +
-  scale_x_continuous(trans="log",breaks=c(1,3,10,30,100)) +
+  scale_x_continuous(trans="log",breaks=c(7,20,55,148,400)) +
   ylim(4,14) +
   labs(x="Sample size in State_Name j",y="mean ln(PA_ha) in State_Name j",
        title="No pooling: estimates from linear model fit")
@@ -832,7 +832,7 @@ plotTWO <-
   geom_hline(mapping=aes(yintercept=ovrl_mn),data=pp_mean_df,col="blue",lty=2) +
   geom_point(mapping=aes(x=sample_size_jit,y=ST_mn)) +
   geom_linerange(mapping=aes(x=sample_size_jit,ymin=ST_mn-ST_se,ymax=ST_mn+ST_se)) +
-  scale_x_continuous(trans="log",breaks=c(1,3,10,30,100)) +
+  scale_x_continuous(trans="log",breaks=c(7,20,55,148,400)) +
   ylim(4,14) +
   labs(x="Sample size in State_Name j",y="mean ln(PA_ha) in State_Name j",
        title="Partial pooling: multilevel model, max likelihood")
@@ -890,60 +890,60 @@ print(summary(ppfit_bayes)[,c(1,3,9,10)],digits=3)
 ```
 
     ##                                                     mean     sd n_eff Rhat
-    ## (Intercept)                                     8.10e+00 0.2346   103 1.06
-    ## b[(Intercept) State_Name:Alabama]              -1.01e+00 0.2835   139 1.05
-    ## b[(Intercept) State_Name:Arizona]               3.77e+00 0.3603   290 1.02
-    ## b[(Intercept) State_Name:Arkansas]             -6.50e-01 0.2813   164 1.04
-    ## b[(Intercept) State_Name:California]            2.24e+00 0.2782   147 1.04
-    ## b[(Intercept) State_Name:Colorado]              1.44e+00 0.2781   146 1.04
-    ## b[(Intercept) State_Name:Connecticut]           1.65e-01 0.4511   349 1.02
-    ## b[(Intercept) State_Name:Delaware]              1.24e+00 0.6805  1047 1.01
-    ## b[(Intercept) State_Name:District_of_Columbia] -1.83e+00 0.9489  1801 1.00
-    ## b[(Intercept) State_Name:Florida]               6.96e-01 0.2717   140 1.04
-    ## b[(Intercept) State_Name:Georgia]              -1.50e+00 0.2566   119 1.05
-    ## b[(Intercept) State_Name:Idaho]                 1.46e+00 0.2980   168 1.04
-    ## b[(Intercept) State_Name:Illinois]             -1.91e+00 0.2644   122 1.05
-    ## b[(Intercept) State_Name:Indiana]              -2.37e+00 0.2693   131 1.05
-    ## b[(Intercept) State_Name:Iowa]                 -2.44e+00 0.2731   135 1.05
-    ## b[(Intercept) State_Name:Kansas]               -2.04e+00 0.2873   149 1.04
-    ## b[(Intercept) State_Name:Kentucky]             -1.89e+00 0.2686   134 1.05
-    ## b[(Intercept) State_Name:Louisiana]            -6.86e-01 0.2799   142 1.04
-    ## b[(Intercept) State_Name:Maine]                 1.56e+00 0.3777   241 1.03
-    ## b[(Intercept) State_Name:Maryland]              7.62e-01 0.3430   208 1.03
-    ## b[(Intercept) State_Name:Massachusetts]         1.14e+00 0.3749   356 1.02
-    ## b[(Intercept) State_Name:Michigan]             -5.86e-01 0.2721   129 1.05
-    ## b[(Intercept) State_Name:Minnesota]            -8.27e-01 0.2680   132 1.05
-    ## b[(Intercept) State_Name:Mississippi]          -3.93e-01 0.2815   152 1.04
-    ## b[(Intercept) State_Name:Missouri]             -1.55e+00 0.2662   127 1.05
-    ## b[(Intercept) State_Name:Montana]               2.11e+00 0.2836   161 1.04
-    ## b[(Intercept) State_Name:Nebraska]             -1.89e+00 0.2785   143 1.04
-    ## b[(Intercept) State_Name:Nevada]                3.12e+00 0.3725   230 1.03
-    ## b[(Intercept) State_Name:New_Hampshire]         6.67e-01 0.4214   320 1.01
-    ## b[(Intercept) State_Name:New_Jersey]            1.22e-01 0.3388   229 1.03
-    ## b[(Intercept) State_Name:New_Mexico]            2.66e+00 0.3082   202 1.03
-    ## b[(Intercept) State_Name:New_York]             -3.37e-02 0.2783   153 1.04
-    ## b[(Intercept) State_Name:North_Carolina]       -7.43e-01 0.2669   130 1.05
-    ## b[(Intercept) State_Name:North_Dakota]          2.19e-01 0.2913   155 1.04
-    ## b[(Intercept) State_Name:Ohio]                 -1.90e+00 0.2672   128 1.05
-    ## b[(Intercept) State_Name:Oklahoma]              6.77e-02 0.2783   147 1.04
-    ## b[(Intercept) State_Name:Oregon]                1.82e+00 0.3035   184 1.03
-    ## b[(Intercept) State_Name:Pennsylvania]         -5.08e-01 0.2737   138 1.04
-    ## b[(Intercept) State_Name:Rhode_Island]         -3.48e-01 0.5261   577 1.01
-    ## b[(Intercept) State_Name:South_Carolina]       -7.52e-01 0.3007   170 1.04
-    ## b[(Intercept) State_Name:South_Dakota]          1.28e-02 0.2864   158 1.04
-    ## b[(Intercept) State_Name:Tennessee]            -1.31e+00 0.2744   142 1.04
-    ## b[(Intercept) State_Name:Texas]                -1.74e+00 0.2554   119 1.05
-    ## b[(Intercept) State_Name:Utah]                  1.89e+00 0.3169   192 1.03
-    ## b[(Intercept) State_Name:Vermont]               2.05e-01 0.3787   295 1.02
-    ## b[(Intercept) State_Name:Virginia]             -9.24e-01 0.2606   124 1.05
-    ## b[(Intercept) State_Name:Washington]            1.53e+00 0.2962   158 1.04
-    ## b[(Intercept) State_Name:West_Virginia]        -1.10e+00 0.3005   171 1.04
-    ## b[(Intercept) State_Name:Wisconsin]            -1.01e-01 0.2783   146 1.04
-    ## b[(Intercept) State_Name:Wyoming]               1.81e+00 0.3347   222 1.03
-    ## sigma                                           2.27e+00 0.0172  2779 1.00
-    ## Sigma[State_Name:(Intercept),(Intercept)]       2.53e+00 0.5430   306 1.01
-    ## mean_PPD                                        7.58e+00 0.0331  3411 1.00
-    ## log-posterior                                  -2.06e+04 7.0980   464 1.00
+    ## (Intercept)                                     8.11e+00 0.2557   126 1.06
+    ## b[(Intercept) State_Name:Alabama]              -1.02e+00 0.2992   171 1.05
+    ## b[(Intercept) State_Name:Arizona]               3.76e+00 0.3805   291 1.03
+    ## b[(Intercept) State_Name:Arkansas]             -6.54e-01 0.3016   165 1.05
+    ## b[(Intercept) State_Name:California]            2.23e+00 0.2951   159 1.05
+    ## b[(Intercept) State_Name:Colorado]              1.43e+00 0.2962   163 1.05
+    ## b[(Intercept) State_Name:Connecticut]           1.63e-01 0.4633   401 1.02
+    ## b[(Intercept) State_Name:Delaware]              1.23e+00 0.7027   996 1.01
+    ## b[(Intercept) State_Name:District_of_Columbia] -1.88e+00 0.9380  2288 1.00
+    ## b[(Intercept) State_Name:Florida]               6.92e-01 0.2896   161 1.05
+    ## b[(Intercept) State_Name:Georgia]              -1.51e+00 0.2782   148 1.06
+    ## b[(Intercept) State_Name:Idaho]                 1.46e+00 0.3173   200 1.04
+    ## b[(Intercept) State_Name:Illinois]             -1.92e+00 0.2826   153 1.05
+    ## b[(Intercept) State_Name:Indiana]              -2.38e+00 0.2862   157 1.05
+    ## b[(Intercept) State_Name:Iowa]                 -2.45e+00 0.2917   158 1.05
+    ## b[(Intercept) State_Name:Kansas]               -2.05e+00 0.3049   182 1.04
+    ## b[(Intercept) State_Name:Kentucky]             -1.89e+00 0.2885   153 1.05
+    ## b[(Intercept) State_Name:Louisiana]            -6.92e-01 0.3004   167 1.05
+    ## b[(Intercept) State_Name:Maine]                 1.56e+00 0.3833   282 1.02
+    ## b[(Intercept) State_Name:Maryland]              7.67e-01 0.3584   252 1.03
+    ## b[(Intercept) State_Name:Massachusetts]         1.14e+00 0.3834   300 1.02
+    ## b[(Intercept) State_Name:Michigan]             -5.94e-01 0.2866   152 1.05
+    ## b[(Intercept) State_Name:Minnesota]            -8.34e-01 0.2841   154 1.05
+    ## b[(Intercept) State_Name:Mississippi]          -3.99e-01 0.2951   160 1.05
+    ## b[(Intercept) State_Name:Missouri]             -1.55e+00 0.2857   155 1.05
+    ## b[(Intercept) State_Name:Montana]               2.10e+00 0.3005   171 1.05
+    ## b[(Intercept) State_Name:Nebraska]             -1.90e+00 0.2945   164 1.05
+    ## b[(Intercept) State_Name:Nevada]                3.11e+00 0.3791   274 1.03
+    ## b[(Intercept) State_Name:New_Hampshire]         6.60e-01 0.4195   316 1.03
+    ## b[(Intercept) State_Name:New_Jersey]            1.20e-01 0.3567   247 1.03
+    ## b[(Intercept) State_Name:New_Mexico]            2.65e+00 0.3283   203 1.04
+    ## b[(Intercept) State_Name:New_York]             -3.89e-02 0.3016   170 1.04
+    ## b[(Intercept) State_Name:North_Carolina]       -7.49e-01 0.2853   157 1.05
+    ## b[(Intercept) State_Name:North_Dakota]          2.14e-01 0.3123   177 1.04
+    ## b[(Intercept) State_Name:Ohio]                 -1.91e+00 0.2880   159 1.05
+    ## b[(Intercept) State_Name:Oklahoma]              6.46e-02 0.3018   170 1.05
+    ## b[(Intercept) State_Name:Oregon]                1.82e+00 0.3186   191 1.04
+    ## b[(Intercept) State_Name:Pennsylvania]         -5.10e-01 0.2913   165 1.04
+    ## b[(Intercept) State_Name:Rhode_Island]         -3.32e-01 0.5305   536 1.01
+    ## b[(Intercept) State_Name:South_Carolina]       -7.56e-01 0.3177   199 1.04
+    ## b[(Intercept) State_Name:South_Dakota]          8.00e-03 0.3081   174 1.04
+    ## b[(Intercept) State_Name:Tennessee]            -1.31e+00 0.2949   165 1.05
+    ## b[(Intercept) State_Name:Texas]                -1.75e+00 0.2733   142 1.05
+    ## b[(Intercept) State_Name:Utah]                  1.88e+00 0.3221   200 1.04
+    ## b[(Intercept) State_Name:Vermont]               2.06e-01 0.3861   304 1.02
+    ## b[(Intercept) State_Name:Virginia]             -9.29e-01 0.2791   149 1.05
+    ## b[(Intercept) State_Name:Washington]            1.53e+00 0.3159   189 1.04
+    ## b[(Intercept) State_Name:West_Virginia]        -1.11e+00 0.3151   197 1.04
+    ## b[(Intercept) State_Name:Wisconsin]            -1.08e-01 0.2918   159 1.05
+    ## b[(Intercept) State_Name:Wyoming]               1.80e+00 0.3483   223 1.03
+    ## sigma                                           2.27e+00 0.0167  2981 1.00
+    ## Sigma[State_Name:(Intercept),(Intercept)]       2.55e+00 0.5594   230 1.01
+    ## mean_PPD                                        7.58e+00 0.0336  4000 1.00
+    ## log-posterior                                  -2.06e+04 6.8928   351 1.01
 
 Diagnostics
 
@@ -966,7 +966,7 @@ names(samples)
 str(samples$alpha) #Samples of overall mean. Matrix: samples by row,  1 col, 4000 rows
 ```
 
-    ##  num [1:4000, 1] 8.36 8.13 8.19 8.13 7.91 ...
+    ##  num [1:4000, 1] 7.92 7.96 8.1 7.9 8.62 ...
     ##  - attr(*, "dimnames")=List of 2
     ##   ..$ iterations: NULL
     ##   ..$           : NULL
@@ -975,7 +975,7 @@ str(samples$alpha) #Samples of overall mean. Matrix: samples by row,  1 col, 400
 str(samples$b) #Samples of state deviations. Matrix: samples by row, 50 cols, 4000 rows
 ```
 
-    ##  num [1:4000, 1:50] -1.246 -0.739 -1.101 -0.808 -0.95 ...
+    ##  num [1:4000, 1:50] -0.838 -0.518 -0.996 -0.792 -1.542 ...
     ##  - attr(*, "dimnames")=List of 2
     ##   ..$ iterations: NULL
     ##   ..$           : NULL
@@ -1012,8 +1012,10 @@ plot_bayes <-
   geom_hline(mapping=aes(yintercept=ovrl_mn),data=ppbayes_mean_df,col="blue",lty=2) +
   geom_point(mapping=aes(x=sample_size_jit,y=ST_mn)) +
   geom_linerange(mapping=aes(x=sample_size_jit,ymin=ST_mn-ST_se,ymax=ST_mn+ST_se)) +
-  scale_x_continuous(trans="log",breaks=c(1,3,10,30,100)) +
+  scale_x_continuous(trans="log",breaks=c(7,20,55,148,400)) +
   ylim(4,14) +
+  annotate("text", label = paste(round(ppbayes_mean_df$ovrl_mn,digits=2), "ln(ha)"),x = 6.5, y = ppbayes_mean_df$ovrl_mn+0.3, size = 3.5, colour= "red")+
+  annotate("text", label = paste("e^8.11=",round(exp(ppbayes_mean_df$ovrl_mn),digits=2),"ha"),x = 7, y = ppbayes_mean_df$ovrl_mn-0.3, size = 3.5, colour= "darkgreen")+
   labs(x="Sample size in state j",y="mean ln(PA hectares) in state j",
        title="Partial pooling: multilevel model, Bayesian")
 grid.arrange(plotONE, plot_bayes, nrow = 1)
@@ -1022,6 +1024,7 @@ grid.arrange(plotONE, plot_bayes, nrow = 1)
 ![](Conservation_glm_files/figure-gfm/unnamed-chunk-36-1.png)<!-- -->
 
 ``` r
+#7.8
 plot_bayes
 ```
 
