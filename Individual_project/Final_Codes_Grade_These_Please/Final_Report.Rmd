@@ -51,7 +51,9 @@ State: State GDP -> County -> Protected Areas: Gap Status 1:4
 ppfit_bayes <- stan_lmer( log_PA_ha ~ Gap_Status + logGDP + (1|State_Name), data=dat1 )
 ```
 
-# 2.) Default Priors:
+# 2.) Default Priors
+I assumed the default priors and let rstanarm adjust their scales to be weakly informative. The prior for the intercept was a normal distribution with a mean of 0 and a standard deviation of 10, but the standard deviation was adjusted to 26.7. Similarly, I assumed the defaults for the regression coefficients (for the Gap Status, logGDP, and State Variables), which were initially a normal distribution with mean 0 and standard deviation of 2.5. Again, rstanarm adjusted the scales such that the standard deviation became 6.67. Finally, the default priors for sigma were assumed to be an exponential distribution with a rate of 1, but those were scaled to 2.67.
+
 ``` r
 Priors for model 'ppfit_bayes' 
 ------
