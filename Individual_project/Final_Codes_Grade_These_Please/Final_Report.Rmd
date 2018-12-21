@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # 1.) Data Structure and Sketch of Sample Design:
+
 ![](Conservation_final_files/figure-gfm/Sample_Design.png)
 
 ## The Model:
