@@ -73,6 +73,26 @@ ppfit_bayes <- stan_lmer( log_PA_ha ~ Gap_Status + logGDP + (1|State_Name), data
 
 # 2.) Default Priors:
 
+``` r
+Priors for model 'ppfit_bayes' 
+------
+Intercept (after predictors centered)
+ ~ normal(location = 0, scale = 10)
+     **adjusted scale = 26.70
+
+Coefficients
+ ~ normal(location = [0,0,0,...], scale = [2.5,2.5,2.5,...])
+     **adjusted scale = [6.67,6.67,6.67,...]
+
+Auxiliary (sigma)
+ ~ exponential(rate = 1)
+     **adjusted scale = 2.67 (adjusted rate = 1/adjusted scale)
+
+Covariance
+ ~ decov(reg. = 1, conc. = 1, shape = 1, scale = 1)
+------
+```
+
 # 3.) Analysis:
 
 ## EDA:
