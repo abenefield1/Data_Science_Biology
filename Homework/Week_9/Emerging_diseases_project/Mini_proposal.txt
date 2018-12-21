@@ -1,0 +1,37 @@
+# Dataset = Emerging_diseases_project/EID_Lat
+# Dataset on Emerging Infectious Diseases
+
+
+
+#Characteristics:
+	# 149 emerging disease outbreaks
+	# Includes data on location, pathogen type, species, date (year), and other unimportant attributes
+	# I am currently adding a data field about morbidity (# of people infected), and given enough time, I'll add latitude information (already added some).
+	
+# Structure:
+	# Data are organized by year (1970-2003) and pathogen type. Raw data includes 7 pathogen types, but I have written code to simplify that to 3 types: virus, bacteria, other.
+	# I also have code to structure the data around latitude, but I'm not particularly interested in this question.
+
+#Questions:	
+	# My original question was: Is the incidence of new (emerging) infectious diseases changing with time or population size? Specifically, I was wondering how/if the different types of diseases (bacteria, virus, other) were changing with time.
+		# My data was not fit for this question, because the pathogen type was a function of pathogen count (by year).
+	# So, as a work-around, I am adding the new data field, morbidity, for each outbreak in the dataset. Morbidity is the main response variable and will be a proxy for incidence of novel infectious diseases. Similarly, time can be a proxy for population size (as time increases, population increases), so I can address that question as well. The data will then be structured by pathogen type (bacteria, virus, or other).
+		# Also, if I have time to calculate the latitude for outbreak events, I can run a separate analysis where the data will be structured around the latitude.
+		
+#The data is of the form:
+
+Morbidity	Type	Year	Latitude
+5000	Virus	1979	x
+1800	Virus	1984	x
+2000	Bacteria	1984	x
+4000	Other	1980	x
+
+
+# Thus far, I have created an algorithm to clean and sort the data. I'm using simulated numbers for morbidity until I can add the actual values. I have a rough start on the model - have successfully run stan_glm and created a nice plot with ggplot (see code: Emerging_diseases_project/Emerging_disease_morbidity.R, and plot:Emerging_diseases_project/Morbidity_disease.pdf). However, it still needs a lot of work, and most importantly, it needs real data for morbidity.
+
+
+
+
+
+
+

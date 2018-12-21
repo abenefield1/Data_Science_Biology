@@ -1,0 +1,150 @@
+eidid,eid_name,path_genus,path_species,path_disease,event_location,zoo_origin,zoo_origin_type,path_type,event_date,event_year,event_decade,filename,wildlife_zoonoses
+5,HED_5,Bacillus,anthracis,Anthrax,"Sverdlovsk (now Yekaterinburg), north central Russia",1,3,bacteria,2-Apr-79,1979,1970,HED_5.shp,TRUE
+10,HED_10,Bartonella,elizabethae,Endocarditis,"St. Elizabeth's Hospital, Brighton, MA",1,2,bacteria,1986,1986,1980,HED_10.shp,TRUE
+18,HED_18,Brucella,melitensis,Unspecified,Malta and Gozo,1,3,bacteria,1995,1995,1990,HED_18.shp,TRUE
+20,HED_20,Burkholderia,pseudomallei,Melioidosis,"Dapoli Taluka, Ratnagiri District, Maharashtra state, India",1,3,bacteria,1990,1990,1990,HED_20.shp,TRUE
+21,HED_21,Burkholderia,pseudomallei,Melioidosis,"northeastern provinces known as the Isan Region, Thailand",1,3,bacteria,2003ish,2003,2000,HED_21.shp,TRUE
+23,HED_23,Burkholderia,pseudomallei,Melioidosis,"<d2>Top End<d3> of the Northern Territory, Australia",1,3,bacteria,1997,1997,1990,HED_23.shp,TRUE
+24,HED_24,Burkholderia,pseudomallei,Melioidosis,Taiwan,1,3,bacteria,1994,1994,1990,HED_24.shp,TRUE
+26,HED_26,Campylobacter,jejuni,Unspecified,"Zurich, Switzerland",1,3,bacteria,28-Apr-86,1986,1980,HED_26.shp,TRUE
+30,HED_30,Clostridium,botulinum,food botulism,"US (alaska, Washington, Oregon, California)",1,2,bacteria,1976,1976,1970,HED_30.shp,TRUE
+31,HED_31,Clostridium,botulinum,infant botulism,CA,1,2,bacteria,1976,1976,1970,HED_31.shp,TRUE
+37,HED_37,Coxiella,burnetii,"Q fever, endocarditis (chronic)","Germany (rural town (Rollshausen [1996 population: 300]) and in five surrounding towns approximately 0.5<d0>2.0 miles from Rollshausen, in the district of Lohra)",1,3,rickettsia,May-96,1996,1990,HED_37.shp,TRUE
+39,HED_39,Coxiella,burnetii,"Q fever, endocarditis (chronic)",Bulgaria,1,3,rickettsia,1990s,1990,1990,HED_39.shp,TRUE
+41,HED_41,Ehrlichia,chaffeensis,HME,"Ft. Chaffee, AR",1,3,rickettsia,19-Jul-90,1990,1990,HED_41.shp,TRUE
+42,HED_42,Ehrlichia,equi,Unspecified,"Duluth, MN, USA",1,2,rickettsia,1990,1990,1990,HED_42.shp,TRUE
+43,HED_43,Ehrlichia,ewingii,Unspecified,"southern MO, USA",1,3,rickettsia,1996,1996,1990,HED_43.shp,TRUE
+44,HED_44,Ehrlichia,phagocytophila,HGE,"northwestern WI/MN. Nikki rechecked and suggested we use ""Duluth, MN""",1,2,rickettsia,13-Jun-90,1990,1990,HED_44.shp,TRUE
+53,HED_53,Escherichia,coli,Hemorrhagic colitis; hemolytic uremic syndrome,CA,1,3,bacteria,1975,1975,1970,HED_53.shp,TRUE
+54,HED_54,Escherichia,coli,Enterohemorrhagic Escherichia coli,"Lombardia region, Italy",1,3,bacteria,20-Apr-92,1992,1990,HED_54.shp,TRUE
+56,HED_56,Escherichia,coli,Enterohemorrhagic Escherichia coli,GA,1,3,bacteria,1983,1983,1980,HED_56.shp,TRUE
+57,HED_57,Escherichia,coli,Enterohemorrhagic Escherichia coli,Michigan,1,3,bacteria,1983,1983,1980,HED_57.shp,TRUE
+59,HED_59,Escherichia,coli,Enterohemorrhagic Escherichia coli,"South Dakota, US",1,3,bacteria,1980,1980,1980,HED_59.shp,TRUE
+60,HED_60,Escherichia,coli,Enterohemorrhagic Escherichia coli,"Subiaco, Western Australia",1,3,bacteria,late 1980s,1980,1980,HED_60.shp,TRUE
+61,HED_61,Escherichia,coli,Enterohemorrhagic Escherichia coli,"Subiaco, Western Australia",1,3,bacteria,late 1980s,1980,1980,HED_61.shp,TRUE
+63,HED_63,Escherichia,coli,Enterohemorrhagic Escherichia coli,UK (Oxford),1,3,bacteria,1984,1984,1980,HED_63.shp,TRUE
+64,HED_64,Escherichia,coli,Enterohemorrhagic Escherichia coli,UK (Belfast),1,3,bacteria,1984,1984,1980,HED_64.shp,TRUE
+65,HED_65,Escherichia,coli,Enterohemorrhagic Escherichia coli,UK (Southampton),1,3,bacteria,1984,1984,1980,HED_65.shp,TRUE
+66,HED_66,Escherichia,coli,Enterohemorrhagic Escherichia coli,UK,1,3,bacteria,late 1980s,1980,1980,HED_66.shp,TRUE
+67,HED_67,Escherichia,coli,Enterohemorrhagic Escherichia coli,UK,1,3,bacteria,late 1980s,1980,1980,HED_67.shp,TRUE
+68,HED_68,Escherichia,coli,Enterohemorrhagic Escherichia coli,UK,1,3,bacteria,late 1980s,1980,1980,HED_68.shp,TRUE
+69,HED_69,Escherichia,coli,Enterohemorrhagic Escherichia coli,Japan,1,3,bacteria,1990s,1990,1990,HED_69.shp,TRUE
+70,HED_70,Escherichia,coli,Enterohemorrhagic Escherichia coli,"Helena, MT, US",1,3,bacteria,"Feb. 20, 1994",1994,1990,HED_70.shp,TRUE
+71,HED_71,Escherichia,coli,Enterohemorrhagic Escherichia coli,"Saarbrucken, Fed. Rep. Germany",1,3,bacteria,1985,1985,1980,HED_71.shp,TRUE
+72,HED_72,Escherichia,coli,Enterohemorrhagic Escherichia coli,"Komatsu, Ishikawa Prefecture, Japan",1,3,bacteria,8-Jul-96,1996,1990,HED_72.shp,TRUE
+73,HED_73,Escherichia,coli,Enterohemorrhagic Escherichia coli,Peru,1,3,bacteria,1984,1984,1980,HED_73.shp,TRUE
+74,HED_74,Escherichia,coli,Enterohemorrhagic Escherichia coli,"Germany (Bavaria, Schleswig-Holstein, North Rhine-Westphalia)",1,3,bacteria,1990s,1990,1990,HED_74.shp,TRUE
+75,HED_75,Escherichia,coli,Enterohemorrhagic Escherichia coli,"Guelph, Ontario, Canada",1,3,bacteria,1990s,1990,1990,HED_75.shp,TRUE
+77,HED_77,Escherichia,coli,Enterohemorrhagic Escherichia coli,"Foothills Hospital, Calgary, AB, Canada",1,3,bacteria,Jul-84,1984,1980,HED_77.shp,TRUE
+78,HED_78,Escherichia,coli,Enterohemorrhagic Escherichia coli,Italy and Germany,1,3,bacteria,1995,1995,1990,HED_78.shp,TRUE
+79,HED_79,Francisella,tularensis,Unspecified,"Mayor River, Spain (All crayfish caught were of the red swamp species (P. clarkii). The section of the river authorized for fishing is 14 km, from the town of Huete to the beginning of the Buend<92>a Dam into which the river flows. There are designated hunti",1,3,bacteria,14/07/1998,1998,1990,HED_79.shp,TRUE
+80,HED_80,Francisella,tularensis,Unspecified,"Shandong Peninsula, China",1,3,bacteria,1987,1987,1980,HED_80.shp,TRUE
+98,HED_98,Leptospira,weilii,Unspecified,Sabah,1,3,bacteria,Aug 21 2000,2000,2000,HED_98.shp,TRUE
+108,HED_108,Mycobacterium,simiae,Unspecified,Dakar,1,2,bacteria,1970,1970,1970,HED_108.shp,TRUE
+110,HED_110,Mycobacterium,tuberculosis,Tuberculosis,Miami,1,2,bacteria,Jan-81,1981,1980,HED_110.shp,TRUE
+130,HED_130,Vibrio,damsela,Unspecified,"Louisiana, USA",1,2,bacteria,Jul-71,1971,1970,HED_130.shp,TRUE
+135,HED_135,Vibrio,parahaemolyticus,Unspecified,Maryland,1,2,bacteria,1971,1971,1970,HED_135.shp,TRUE
+137,HED_137,Encephalitozoon,cuniculi,Unspecified,"Geneva, Switzerland",1,3,protozoa,nov. 1987,1987,1980,HED_137.shp,TRUE
+138,HED_138,Encephalitozoon,hellem,Unspecified,"Texas and NYC(2), USA",1,3,protozoa,1990,1990,1990,HED_138.shp,TRUE
+147,HED_147,Unspecified,Unspecified,Unspecified,"La Gamba, R<92>o Claro, in the Brunca Region of Costa Rica",1,3,virus,"Sept. 12, 2001",2001,2000,HED_147.shp,TRUE
+148,HED_148,Unspecified,Unspecified,Unspecified,"Reston, VA",1,2,virus,1989,1989,1980,HED_148.shp,TRUE
+149,HED_149,Unspecified,Unspecified,Unspecified,Egypt,1,3,virus,1977,1977,1970,HED_149.shp,TRUE
+150,HED_150,Unspecified,Unspecified,Unspecified,"Senegal river basin. Nikki rechecked and suggested mapping ""Rosso, Mauritania""",1,3,virus,1987,1987,1980,HED_150.shp,TRUE
+151,HED_151,Unspecified,Unspecified,Unspecified,Egypt,1,3,virus,1993,1993,1990,HED_151.shp,TRUE
+152,HED_152,Unspecified,Unspecified,Unspecified,"Sao Paulo State, Brazil",1,2,virus,1978,1978,1970,HED_152.shp,TRUE
+165,HED_165,Rickettsia,africae,Unspecified,"Harare, Zimbabwe",1,3,rickettsia,Aug-92,1992,1990,HED_165.shp,TRUE
+166,HED_166,Rickettsia,africae,Unspecified,Guadeloupe,1,3,rickettsia,Jul-97,1997,1990,HED_166.shp,TRUE
+168,HED_168,Rickettsia,akari,Rickettsialpox,"Medical Center of Zadar, Zadar, Croatia",1,2,rickettsia,May-91,1991,1990,HED_168.shp,TRUE
+169,HED_169,Rickettsia,felis,California flea typhus,Corpus Christi and Nueces County regions of south Texas,1,3,rickettsia,spring 1991,1991,1990,HED_169.shp,TRUE
+170,HED_170,Rickettsia,felis,California flea typhus,"rural eastern Yucatan, Mexico",1,3,rickettsia,2000,2000,2000,HED_170.shp,TRUE
+171,HED_171,Rickettsia,helvetica,Unspecified,"Uppsala, Sweden",1,3,rickettsia,Oct. 1997,1997,1990,HED_171.shp,TRUE
+172,HED_172,Rickettsia,honei,Thai tick typhus,"Chiang Mai, University Hospital, Chiang Mai, Thailand",1,2,rickettsia,29-Aug-90,1990,1990,HED_172.shp,TRUE
+173,HED_173,Rickettsia,honei,Thai tick typhus,Flinders Island (between Australia and Tasmania),1,2,rickettsia,1993,1993,1990,HED_173.shp,TRUE
+175,HED_175,Rickettsia,mongolotimonae,Unspecified,Marseille,1,2,rickettsia,1996,1996,1990,HED_175.shp,TRUE
+176,HED_176,Rickettsia,prowazekii,"typhus, Brill<d0>Zinsser disease (reactivation of latent infection)","N'Gozi, Burundi",1,2,rickettsia,Dec-95,1995,1990,HED_176.shp,TRUE
+177,HED_177,Rickettsia,quintana,Unspecified,"Seattle, USA",1,2,rickettsia,Jan-93,1993,1990,HED_177.shp,TRUE
+179,HED_179,Rickettsia,japonica,Japanese spotted fever,"Tokushima Prefecture, on the island of Shikoku in southwestern Japan",1,2,rickettsia,1984,1984,1980,HED_179.shp,TRUE
+181,HED_181,Rickettsia,typhi,Murine (endemic) typhus,Texas,1,2,rickettsia,1983,1983,1980,HED_181.shp,TRUE
+182,HED_182,Salmonella,enteritidis,Unspecified,"Dunaszentgyorgy, Hungary",1,3,bacteria,1979,1979,1970,HED_182.shp,TRUE
+183,HED_183,Salmonella,enteritidis,Unspecified,England/Wales,1,3,bacteria,1985,1985,1980,HED_183.shp,TRUE
+198,HED_198,Serratia,odorifera,Unspecified,"Tampa, FL",1,3,bacteria,1987,1987,1980,HED_198.shp,TRUE
+213,HED_213,Listeria,monocytogenes,Listeriosis,"Canada (Prince Edward Island, Nova Scotia, New Brunswick)",1,3,bacteria,1979,1979,1970,HED_213.shp,TRUE
+216,HED_216,Mycobacterium,asiaticum,Unspecified,"Brisbane, Australia",1,2,bacteria,1971,1971,1970,HED_216.shp,TRUE
+221,HED_221,Staphylococcus,lugdunensis,Unspecified,"Lyon, France",1,3,bacteria,Apr-88,1988,1980,HED_221.shp,TRUE
+234,HED_234,Yersinia,pestis,Unspecified,"Surat, Gujarat, India",1,2,bacteria,Aug-94,1994,1990,HED_234.shp,TRUE
+235,HED_235,Yersinia,pestis,Unspecified,New Mexico,1,2,bacteria,1970,1970,1970,HED_235.shp,TRUE
+236,HED_236,Yersinia,pestis,Unspecified,farm in the Graaff-Reinet district of the eastern Cape Province South Africa,1,2,bacteria,"Nov. 11, 1972",1972,1970,HED_236.shp,TRUE
+237,HED_237,Yersinia,pestis,Unspecified,"Bolivia, Brazil, Ecuador, Peru. Nikki rechecked and suggested Northern Peru.",1,2,bacteria,1994,1994,1990,HED_237.shp,TRUE
+238,HED_238,Yersinia,pestis,Unspecified,"Al-Azzizat, Libya",1,2,bacteria,Feb-76,1976,1970,HED_238.shp,TRUE
+239,HED_239,Yersinia,pestis,Unspecified,"Ambalavao district of Madagascar. Nikki rechecked and suggested ""100 km circle around town of ambalavao"". However there are lots of towns called Ambalavao so I left it as it was",1,2,bacteria,1995,1995,1990,HED_239.shp,TRUE
+240,HED_240,Yersinia,pestis,Unspecified,Malawi and Mozambique,1,2,bacteria,1994,1994,1990,HED_240.shp,TRUE
+241,HED_241,Yersinia,pestis,Unspecified,Ambalavao district of Madagascar,1,2,bacteria,1995,1995,1990,HED_241.shp,TRUE
+242,HED_242,Yersinia,pestis,Unspecified,USA (NM area),1,2,bacteria,1990s,1990,1990,HED_242.shp,TRUE
+252,HED_252,Coccidioides,immitis,Unspecified,"Kern County, CA",1,3,fungi,1990,1990,1990,HED_252.shp,TRUE
+259,HED_259,Histoplasma,capsulatum,Unspecified,Indianapolis,1,3,fungi,1980,1980,1980,HED_259.shp,TRUE
+260,HED_260,Histoplasma,capsulatum,Unspecified,"Santa Rosa National Park, Guanacaste Province, Costa Rica",1,3,fungi,1988,1988,1980,HED_260.shp,TRUE
+261,HED_261,Malassezia,pachydermatis,Unspecified,"Palo Alto, CA",1,3,fungi,1984,1984,1980,HED_261.shp,TRUE
+264,HED_264,Penicillium,marneffei,Unspecified,"Rush-Presbyterian- St. Luke Medical Center, Chicago, IL",1,2,fungi,Oct. 1987,1987,1980,HED_264.shp,TRUE
+265,HED_265,Penicillium,marneffei,Unspecified,"South Carolina, USA",1,2,fungi,summer 1970,1970,1970,HED_265.shp,TRUE
+273,HED_273,Anisakis,simplex,Anisakiasis,Spain,1,2,helminths,1991,1991,1990,HED_273.shp,TRUE
+274,HED_274,Echinococcus,granulosus,Unspecified,Bulgaria,1,3,helminths,1971,1971,1970,HED_274.shp,TRUE
+275,HED_275,Echinococcus,granulosus,Unspecified,"tibet; Wen, H., Chai, J.J., Wang, J.C., Wang, S.H., Wang, X.Y., Feng, X.H. and Zhou, H.X., 2002. Hydatid control within a continental system in PR China. In: Craig, P.S. and Pawlowski, Z., Editors, 2002. Cestode Zoonoses: Echinococcosis and Cysticercosis, IOS Press, Amsterdam, pp. 355<d0>365.",1,3,helminths,1990s,1990,1990,HED_275.shp,TRUE
+276,HED_276,Echinococcus,granulosus,Unspecified,Khazakstan (Zhambyl Oblast and South Kazakhstan Oblast),1,3,helminths,1990,1990,1990,HED_276.shp,TRUE
+277,HED_277,Echinococcus,granulosus,Unspecified,"Tibet; Wen, H., Chai, J.J., Wang, J.C., Wang, S.H., Wang, X.Y., Feng, X.H. and Zhou, H.X., 2002. Hydatid control within a continental system in PR China. In: Craig, P.S. and Pawlowski, Z., Editors, 2002. Cestode Zoonoses: Echinococcosis and Cysticercosis, IOS Press, Amsterdam, pp. 355<d0>365.",1,3,helminths,1980,1980,1980,HED_277.shp,TRUE
+278,HED_278,Echinococcus,granulosus,Unspecified,"Neuquen, Chubut and Rio Negro (Argentina)",1,3,helminths,1999,1999,1990,HED_278.shp,TRUE
+279,HED_279,Echinococcus,granulosus,Unspecified,"lived in a semirural town approximately 80 miles north of Anchorage, Alaska. Nikki rechecked and suggested we use ""Talkeetna, Alaska""",1,3,helminths,Mar-99,1999,1990,HED_279.shp,TRUE
+281,HED_281,Metorchis,conjunctus,Unspecified,"Montreal, Canada",1,3,helminths,16-May-93,1993,1990,HED_281.shp,TRUE
+284,HED_284,Schistosoma,mansoni,Unspecified,Oman (Sultan Qaboos Hospital in Salalah),1,2,helminths,1999,1999,1990,HED_284.shp,TRUE
+288,HED_288,Trichinella,spiralis,Unspecified,Italy and France,1,3,helminths,1975,1975,1970,HED_288.shp,TRUE
+289,HED_289,Trichinella,spiralis,Unspecified,"USSR, Bulgaria, Romania",1,3,helminths,1980s,1980,1980,HED_289.shp,TRUE
+290,HED_290,Trichinella,spiralis,Unspecified,Yugoslavia,1,3,helminths,1990s,1990,1990,HED_290.shp,TRUE
+291,HED_291,Trichinella,spiralis,Unspecified,"Argentina, China, Mexico",1,3,helminths,1970s,1970,1970,HED_291.shp,TRUE
+295,HED_295,Angiostrongylus,cantonensis,Unspecified,"Havana, Cuba",1,2,protozoa,1973,1973,1970,HED_295.shp,TRUE
+300,HED_300,Babesia,microti-like,Unspecified,rural forested area in southcentral Washington state,1,3,protozoa,Sept. 1991,1991,1990,HED_300.shp,TRUE
+301,HED_301,Balamuthia,mandrillaris,Unspecified,"Kings County Hospital Center, Brooklyn, NY",1,3,protozoa,1990,1990,1990,HED_301.shp,TRUE
+306,HED_306,Leishmania,donovani,Unspecified,Germany,1,3,protozoa,1988,1988,1980,HED_306.shp,TRUE
+307,HED_307,Leishmania,infantum,Unspecified,"Spain, southern France, Portugal, and Italy",1,3,protozoa,1990,1990,1990,HED_307.shp,TRUE
+308,HED_308,Leishmania,tropica,Unspecified,Eastern Saudi Arabia,1,3,protozoa,Nov. 1990,1990,1990,HED_308.shp,TRUE
+328,HED_328,Trypanosoma,brucei,Unspecified,Soroti district of eastern Uganda,1,3,protozoa,end of 1998,1998,1990,HED_328.shp,TRUE
+329,HED_329,Trypanosoma,brucei,Unspecified,"Tambura County, Western Equatoria, Sudan",1,3,protozoa,1997,1997,1990,HED_329.shp,TRUE
+330,HED_330,Trypanosoma,brucei,Unspecified,"provinces of Western and Eastern Equatoria, Sudan",1,3,protozoa,late 1970s,1970,1970,HED_330.shp,TRUE
+331,HED_331,Trypanosoma,brucei,Unspecified,"Sudan (Western Equatoria was Ibbe, in Maridi county)",1,3,protozoa,1997,1997,1990,HED_331.shp,TRUE
+335,HED_335,Unspecified,Unspecified,Unspecified,"El Boson, southwestern Argentina",1,2,virus,Apr-95,1995,1990,HED_335.shp,TRUE
+336,HED_336,Unspecified,Unspecified,Unspecified,"Rockhampton, Australia",1,2,virus,Oct-96,1996,1990,HED_336.shp,TRUE
+339,HED_339,Unspecified,Unspecified,polyarthritis,"north coast and inland areas of New South Wales, Australia. Nikki rechecked and suggested to use Griffith NSW",1,2,virus,1985 or 1986,1985,1980,HED_339.shp,TRUE
+351,HED_351,Unspecified,Unspecified,Chikungunya fever,"South Sumatra,Java, and West Kalimantan (Indonesia)",1,2,virus,1982,1982,1980,HED_351.shp,TRUE
+352,HED_352,Unspecified,Unspecified,Unspecified,"Tia Forest, cote d'ivoire",1,2,virus,Nov-94,1994,1990,HED_352.shp,TRUE
+354,HED_354,Unspecified,Unspecified,Unspecified,Kosovo,1,3,virus,2001,2001,2000,HED_354.shp,TRUE
+362,HED_362,Unspecified,Unspecified,Unspecified,"Bornholm in Denmark, southern Norway and the south of Sweden",1,3,virus,1993,1993,1990,HED_362.shp,TRUE
+363,HED_363,Unspecified,Unspecified,Unspecified,"Oshima, the southern part of Hokkaido",1,3,virus,1993,1993,1990,HED_363.shp,TRUE
+365,HED_365,Unspecified,Unspecified,Unspecified,"Guanarito, Portuguesa State, Venezuela",1,2,virus,Sep-89,1989,1980,HED_365.shp,TRUE
+368,HED_368,Unspecified,Unspecified,Unspecified,Bosnia,1,2,virus,1995,1995,1990,HED_368.shp,TRUE
+369,HED_369,Unspecified,Unspecified,Unspecified,"Dinara, Croatia",1,2,virus,Jan-89,1989,1980,HED_369.shp,TRUE
+370,HED_370,Unspecified,Unspecified,Unspecified,"Brisbane suburb of Hendra or Mackay, Queensland",1,3,virus,Aug-94,1994,1990,HED_370.shp,TRUE
+376,HED_376,Unspecified,Unspecified,Unspecified,China,1,3,virus,1994,1994,1990,HED_376.shp,TRUE
+399,HED_399,Unspecified,Unspecified,Unspecified,Hong Kong,1,3,virus,May-97,1997,1990,HED_399.shp,TRUE
+403,HED_403,Unspecified,Unspecified,Unspecified,Daru area of the Western Province of Papua New Guinea,1,3,virus,1989,1989,1980,HED_403.shp,TRUE
+404,HED_404,Unspecified,Unspecified,Unspecified,"Badu Island, Torres Strait, Australia",1,3,virus,Apr-95,1995,1990,HED_404.shp,TRUE
+406,HED_406,Unspecified,Unspecified,Unspecified,"murray valley, australia",1,2,virus,1974,1974,1970,HED_406.shp,TRUE
+409,HED_409,Unspecified,Unspecified,Unspecified,"Filadelfia/Loma Plata and Buena Vista/Monte Palma, Chaco region, Paraguay",1,2,virus,Jul-95,1995,1990,HED_409.shp,TRUE
+417,HED_417,Unspecified,Unspecified,Unspecified,"New South Wales, Australia (near Sydney)",1,3,virus,Jun-97,1997,1990,HED_417.shp,TRUE
+418,HED_418,Unspecified,Unspecified,Unspecified,"Democratic Republic of the Congo, Equatorial Province, Basankusu territory, Bolanda or Bokenda village",1,2,virus,20-Aug-70,1970,1970,HED_418.shp,TRUE
+419,HED_419,Unspecified,Unspecified,Unspecified,"Marshfield, WI",1,2,virus,26-May-03,2003,2000,HED_419.shp,TRUE
+420,HED_420,Unspecified,Unspecified,Unspecified,"Katako-Kombre, Sankuru sub-region, Kasai Oriental",1,2,virus,Feb. 1996,1996,1990,HED_420.shp,TRUE
+422,HED_422,Unspecified,Unspecified,Unspecified,Australia (Western Australia and the Northern Territory),1,2,virus,1974,1974,1970,HED_422.shp,TRUE
+423,HED_423,Unspecified,Unspecified,Unspecified,"Malaya peninsula, Perak",1,3,virus,Sep-98,1998,1990,HED_423.shp,TRUE
+429,HED_429,Unspecified,Unspecified,Unspecified,southwestern Uganda (Rakai District),1,2,virus,May-96,1996,1990,HED_429.shp,TRUE
+431,HED_431,Unspecified,Unspecified,Unspecified,Nigeria and Central Africa Republic,1,3,virus,1976,1976,1970,HED_431.shp,TRUE
+432,HED_432,Unspecified,Unspecified,Unspecified,Brazil (Bahia),1,3,virus,May-84,1984,1980,HED_432.shp,TRUE
+440,HED_440,Unspecified,Unspecified,Unspecified,Melbourne,1,3,virus,1973,1973,1970,HED_440.shp,TRUE
+445,HED_445,Unspecified,Unspecified,Unspecified,"Sao Paola, Brazil",1,2,virus,12-Jan-90,1990,1990,HED_445.shp,TRUE
+446,HED_446,Unspecified,Unspecified,Unspecified,"Belem, Brazil",1,2,virus,1992,1992,1990,HED_446.shp,TRUE
+447,HED_447,Unspecified,Unspecified,Unspecified,"New Haven, CT",1,2,virus,"Aug. 8, 1994",1994,1990,HED_447.shp,TRUE
+452,HED_452,Unspecified,Unspecified,Unspecified,"Foshan City, Guangdon Province, China",1,2,virus,2-Nov,2002,2000,HED_452.shp,TRUE
+453,HED_453,Unspecified,Unspecified,Unspecified,Baltimore,1,2,virus,circa 1989,1989,1980,HED_453.shp,TRUE
+454,HED_454,Unspecified,Unspecified,Unspecified,southeastern Idaho,1,2,virus,17-Sep-78,1978,1970,HED_454.shp,TRUE
+458,HED_458,Unspecified,Unspecified,Unspecified,"Nzara Township, Sudan",1,2,virus,27-Jun-76,1976,1970,HED_458.shp,TRUE
+463,HED_463,Unspecified,Unspecified,Venezuelan Equine Encephalitis,Venezuela (eastern part of Falcon State),1,3,virus,Apr-95,1995,1990,HED_463.shp,TRUE
+465,HED_465,Unspecified,Unspecified,Unspecified,"Queens, NY",1,3,virus,late Aug 1999,1999,1990,HED_465.shp,TRUE
+467,HED_467,Unspecified,Unspecified,Unspecified,CA (2 in Southern CA and 1 in SF bay area),1,2,virus,1999,1999,1990,HED_467.shp,TRUE
+470,HED_470,Unspecified,Unspecified,Unspecified,"Yambuku near the banks of the Ebola river, Zaire (now Dem Rep Congo)",1,2,virus,1-Sep-76,1976,1970,HED_470.shp,TRUE
